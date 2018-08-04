@@ -118,7 +118,7 @@
     <ClCompile Include="Customer.c" />
     <ClCompile Include="Database.c" />
     <ClCompile Include="Hotel.c" />
-    <ClCompile Include="Nofar_Alfasi_HW2.c" />
+    <ClCompile Include="Nofar_HW2_Main.c" />
     <ClCompile Include="Reservation.c" />
     <ClCompile Include="Room.c" />
   </ItemGroup>
