@@ -27,7 +27,7 @@
     <ClCompile Include="Room.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Nofar_Alfasi_HW2.c">
+    <ClCompile Include="Nofar_HW2_Main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Database.c">
