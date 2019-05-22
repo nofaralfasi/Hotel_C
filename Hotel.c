@@ -3,10 +3,9 @@
 #include <stdlib.h>
 #include"Hotel.h"
 
-int i = 0, j = 0;
-
 void setNewHotel(hotel_t* hotel)
 {
+	int i = 0, j = 0;
 	getHotelSize(hotel); // gets number of floors and rooms
 	hotel->rooms = (room_t**)calloc(hotel->numOfFloors, sizeof(room_t*));
 	for (i = 0; i < hotel->numOfFloors; i++)
@@ -37,6 +36,7 @@ void getHotelSize(hotel_t* hotel)
 
 void showHotelStatus(const hotel_t* hotel)
 {
+	int i = 0, j = 0;
 	for (i = 0; i < hotel->numOfFloors; i++)
 	{
 		printf("\n ------ floor #%d ------ \n", (i + 1));
@@ -83,6 +83,7 @@ boolean checkRoomNumber(const hotel_t* hotel, int roomNum)
 
 int checkForAvalibaleRoom(const hotel_t* hotel)
 {
+	int i = 0, j = 0;
 	for (i = 0; i < hotel->numOfFloors; i++)
 		for (j = 0; j < hotel->numOfRooms; j++)
 			if (!hotel->rooms[i][j].isTaken)
@@ -92,6 +93,7 @@ int checkForAvalibaleRoom(const hotel_t* hotel)
 
 void freeHotel(hotel_t* hotel)
 {
+	int i = 0;
 	for (i = 0; i < hotel->numOfFloors; i++)
 		free(hotel->rooms[i]);
 }
